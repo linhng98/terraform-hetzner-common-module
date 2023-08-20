@@ -15,4 +15,5 @@ variable "public_ips" {
     assignee_type = optional(string, "server")
     labels        = optional(map(string))
   }))
+  default = {}
 }
