@@ -26,7 +26,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_public_ips"></a> [public\_ips](#input\_public\_ips) | Map static public ip | <pre>map(object({<br>    datacenter    = optional(string)<br>    type          = optional(string, "ipv4")<br>    assignee_type = optional(string, "server")<br>    labels        = optional(map(string))<br>  }))</pre> | n/a | yes |
+| <a name="input_public_ips"></a> [public\_ips](#input\_public\_ips) | Map static public ip | <pre>map(object({<br>    datacenter    = optional(string)<br>    type          = optional(string, "ipv4")<br>    assignee_type = optional(string, "server")<br>    labels        = optional(map(string))<br>  }))</pre> | `{}` | no |
 | <a name="input_ssh_keys"></a> [ssh\_keys](#input\_ssh\_keys) | Map ssh public key | <pre>map(object({<br>    public_key = string<br>    labels     = optional(map(string))<br>  }))</pre> | `{}` | no |
 
 ## Outputs
